@@ -10,19 +10,19 @@ import Foundation
 
 public class PreworkerContext<T> {
     public var progress: Float = 0.0 {
-    didSet(newProgress) {
-        if let ph = preworker.progressHandler {
-            dispatch_async(dispatch_get_main_queue()) {
-                ph(progress: newProgress)
+        didSet(newProgress) {
+            if let ph = preworker.progressHandler {
+                dispatch_async(dispatch_get_main_queue()) {
+                    ph(progress: newProgress)
+                }
             }
         }
-    }
     }
     
     private let group = dispatch_group_create()
     private unowned let preworker: Preworker<T>
     
-    public init(preworker: Preworker<T>) {
+    init(preworker: Preworker<T>) {
         self.preworker = preworker
     }
     
