@@ -39,7 +39,7 @@ class FileDownloadingViewController: UIViewController {
         sender.enabled = false
         statusLabel.hidden = false
         downloadWorker.result { result, error in
-            if error {
+            if error != nil {
                 self.statusLabel.text = "Download failed :("
             } else {
                 self.statusLabel.text = "Downloaded!"

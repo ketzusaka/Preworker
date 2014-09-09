@@ -10,15 +10,10 @@ import Foundation
 
 public class Preworker<T> {
     public typealias WorkHandler = (context: PreworkerContext<T>) -> (result: T?, error: NSError?)
-    public typealias ProgressHandler = (progress: Float) -> ()
+    public typealias ProgressHandler = (progress: Float) -> Void
     
-    public var isStarted: Bool {
-    return started
-    }
-    
-    public var isFinished: Bool {
-    return finished
-    }
+    public private(set) var started = false
+    public private(set) var finished = false
     
     public var progressHandler: ProgressHandler?
     public var progress: Float {
@@ -27,8 +22,6 @@ public class Preworker<T> {
     
     private var workResult: T?
     private var workError: NSError?
-    private var started = false
-    private var finished = false
     private let work: WorkHandler
     private let workLock = NSLock()
     private let dispatchGroup = dispatch_group_create()
@@ -74,9 +67,7 @@ public class Preworker<T> {
         return (result: workResult, error: workError)
     }
     
-    public func result(queue: dispatch_queue_t! = dispatch_get_main_queue(), handler: (result: T?, error: NSError?) -> ()) {
-        assert(queue, "You must pass in a valid dispatch queue")
-
+    public func result(queue: dispatch_queue_t = dispatch_get_main_queue(), handler: (result: T?, error: NSError?) -> ()) {
         dispatch_group_notify(dispatchGroup, queue) {
             handler(result: self.workResult, error: self.workError)
         }

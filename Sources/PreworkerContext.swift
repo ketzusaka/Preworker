@@ -39,10 +39,10 @@ public class PreworkerContext<T> {
     }
 }
 
-@postfix func ++ <T>(context: PreworkerContext<T>) {
+public postfix func ++ <T>(context: PreworkerContext<T>) {
     context.increasePendingOperations()
 }
 
-@postfix func -- <T>(context: PreworkerContext<T>) {
+public postfix func -- <T>(context: PreworkerContext<T>) {
     context.decreasePendingOperations()
 }
