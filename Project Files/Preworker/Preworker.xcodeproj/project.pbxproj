@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F355D55198155E7009C64B5 /* FileDownloadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F355D54198155E7009C64B5 /* FileDownloadingViewController.swift */; };
+		7F6C9E9F19C736030007B5EC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C9E9E19C736030007B5EC /* Error.swift */; };
 		7F86D9AB1976C96900C81BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86D9AA1976C96900C81BEA /* AppDelegate.swift */; };
 		7F86D9AD1976C96900C81BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86D9AC1976C96900C81BEA /* ViewController.swift */; };
 		7F86D9B01976C96900C81BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F86D9AE1976C96900C81BEA /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7F355D54198155E7009C64B5 /* FileDownloadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDownloadingViewController.swift; sourceTree = "<group>"; };
+		7F6C9E9E19C736030007B5EC /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = ../../../Sources/Error.swift; sourceTree = "<group>"; };
 		7F86D9A51976C96900C81BEA /* Preworker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preworker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F86D9A91976C96900C81BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F86D9AA1976C96900C81BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				7F86D9CD1976CAC300C81BEA /* View Controllers */,
 				7F86D9C71976CA6600C81BEA /* Preworker.swift */,
 				7F86D9C81976CA6600C81BEA /* PreworkerContext.swift */,
+				7F6C9E9E19C736030007B5EC /* Error.swift */,
 				7F86D9AA1976C96900C81BEA /* AppDelegate.swift */,
 				7F86D9AE1976C96900C81BEA /* Main.storyboard */,
 				7F86D9B11976C96900C81BEA /* Images.xcassets */,
@@ -233,6 +236,7 @@
 				7F86D9AD1976C96900C81BEA /* ViewController.swift in Sources */,
 				7F86D9AB1976C96900C81BEA /* AppDelegate.swift in Sources */,
 				7F86D9C91976CA6600C81BEA /* Preworker.swift in Sources */,
+				7F6C9E9F19C736030007B5EC /* Error.swift in Sources */,
 				7F86D9CA1976CA6600C81BEA /* PreworkerContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
