@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A156FAD19C9EAC50023905E /* TimeoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A156FAC19C9EAC50023905E /* TimeoutsViewController.swift */; };
 		7F355D55198155E7009C64B5 /* FileDownloadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F355D54198155E7009C64B5 /* FileDownloadingViewController.swift */; };
 		7F6C9E9F19C736030007B5EC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C9E9E19C736030007B5EC /* Error.swift */; };
 		7F86D9AB1976C96900C81BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F86D9AA1976C96900C81BEA /* AppDelegate.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A156FAC19C9EAC50023905E /* TimeoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutsViewController.swift; sourceTree = "<group>"; };
+		1A391F7C19C7446B003B88C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 		7F355D54198155E7009C64B5 /* FileDownloadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDownloadingViewController.swift; sourceTree = "<group>"; };
 		7F6C9E9E19C736030007B5EC /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = ../../../Sources/Error.swift; sourceTree = "<group>"; };
 		7F86D9A51976C96900C81BEA /* Preworker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preworker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,7 @@
 				7F86D9AE1976C96900C81BEA /* Main.storyboard */,
 				7F86D9B11976C96900C81BEA /* Images.xcassets */,
 				7F86D9A81976C96900C81BEA /* Supporting Files */,
+				1A391F7C19C7446B003B88C5 /* README.md */,
 			);
 			path = Preworker;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 				7F86D9AC1976C96900C81BEA /* ViewController.swift */,
 				7F86D9CB1976CABD00C81BEA /* ImageProcessingViewController.swift */,
 				7F355D54198155E7009C64B5 /* FileDownloadingViewController.swift */,
+				1A156FAC19C9EAC50023905E /* TimeoutsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				7F86D9C91976CA6600C81BEA /* Preworker.swift in Sources */,
 				7F6C9E9F19C736030007B5EC /* Error.swift in Sources */,
 				7F86D9CA1976CA6600C81BEA /* PreworkerContext.swift in Sources */,
+				1A156FAD19C9EAC50023905E /* TimeoutsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

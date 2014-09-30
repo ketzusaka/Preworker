@@ -130,6 +130,20 @@ public class Preworker<T> {
     }
     
     /**
+        Synchronously wait for the result of the work. This is a convenience method for waiting
+        a number of seconds before timing out.
+        
+        :param:     delay     The amount of time, in seconds, we will wait for the result of the work.
+        :return:    A tuple with an optional result and optional error. Only one of the tuple parameters will have
+        a value. When the work was successful result will contain the result of the work. When
+        the work failed, or the timeout was reached, error will contain the error.
+    */
+    public func result(timeoutWithDelay delay: Double) -> (result: T?, error: NSError?) {
+        let timeout = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC)))
+        return result(timeout: timeout)
+    }
+    
+    /**
         Asynchronously wait for the result of the work. By default, this method will execute the handling closure
         on the main queue, but you can specify which queue you would like to execute it on.
         
